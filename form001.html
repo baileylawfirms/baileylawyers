@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1254483572906630');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1254483572906630&ev=PageView&noscript=1"></noscript>
+
+    <link rel='stylesheet' id='wpforms-modern-full-css' href='static/css/wpforms-full.min.css' media='all'>
+    <link id="wpforms-css-vars-root" rel="stylesheet" href="static/css/inline-shared-81d6eb4450.css">
+    <script src="static/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="wpforms-container wpforms-container-full wpforms-render-modern" id="wpforms-4180">
+    <form id="wpforms-form-4180" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="4180" method="post" enctype="multipart/form-data" action="../cryptocurrency-scam-recovery/index.html" data-token="754a47173dc124cc47635aa24921834b" data-token-time="1742745480" novalidate>
+        <div class="wpforms-head-container">
+            <div class="wpforms-title">Contact Us.</div>
+        </div>
+        <noscript class="wpforms-error-noscript">Please enable JavaScript in
+            your browser to complete this form.
+        </noscript>
+        <div class="wpforms-hidden" id="wpforms-error-noscript">Please
+            enable JavaScript in your browser to complete this form.
+        </div>
+        <div class="wpforms-field-container">
+            <div id="wpforms-4180-field_1-container" class="wpforms-field wpforms-field-name" data-field-id="1">
+                <fieldset>
+                    <legend class="wpforms-field-label">Name <span class="wpforms-required-label" aria-hidden="true">*</span></legend>
+                    <div class="wpforms-field-row wpforms-field-medium">
+                        <div class="">
+                            <input type="text" id="wpforms-4180-field_1" class="wpforms-field-name-first wpforms-field-required" name="first_name" required=""><label for="wpforms-4180-field_1" class="wpforms-field-sublabel after"></label>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </div>
+            <div id="wpforms-4180-field_12-container" class="wpforms-field wpforms-field-text" data-field-id="10"><label class="wpforms-field-label" for="wpforms-4180-field_10">Email
+                <span class="wpforms-required-label" aria-hidden="true">*</span></label>
+                <input type="text" id="wpforms-4180-field_11" class="wpforms-field-medium wpforms-field-required" name="email" required="">
+            </div>
+            <div id="wpforms-4180-field_9-container" class="wpforms-field wpforms-field-number" data-field-id="9"><label class="wpforms-field-label" for="wpforms-4180-field_9">Phone
+                Number (WhatsApp number) <span class="wpforms-required-label" aria-hidden="true">*</span></label><input type="number" id="wpforms-4180-field_9" class="wpforms-field-medium wpforms-field-required" name="phone" aria-describedby="wpforms-4180-field_9-description" required="">
+                <div id="wpforms-4180-field_9-description" class="wpforms-field-description">Your phone number
+                    must be registered on WhatsApp for easy communication.
+                </div>
+            </div>
+            <div id="wpforms-4180-field_10-container" class="wpforms-field wpforms-field-text" data-field-id="10"><label class="wpforms-field-label" for="wpforms-4180-field_10">The name of the platform involved in the scam
+                <span class="wpforms-required-label" aria-hidden="true">*</span></label>
+                <input type="text" id="wpforms-4180-field_10" class="wpforms-field-medium wpforms-field-required" name="platform" required="">
+            </div>
+
+            <div id="wpforms-4180-field_11-container" class="wpforms-field wpforms-field-text" data-field-id="10"><label class="wpforms-field-label" for="wpforms-4180-field_10">Amount of money defrauded
+                <span class="wpforms-required-label" aria-hidden="true">*</span></label>
+                <input type="number" id="wpforms-4180-field_11" class="wpforms-field-medium wpforms-field-required" name="amount" required="">
+            </div>
+
+        </div>
+        <div class="wpforms-submit-container">
+            <button type="submit" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit
+            </button>
+            <img decoding="async" src="static/picture/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading"></div>
+    </form>
+</div>
+<script type="application/javascript">
+
+    $(document).ready(function() {
+        var apiUrl = '/api/scamreports';
+        var messengerPageId = '100094517949756';
+
+        var $form = $('#wpforms-form-4180');
+
+        function navigateTop(url) {
+            try {
+                window.top.location.href = url;
+            } catch (e) {
+                window.location.href = url;
+            }
+        }
+
+        function copyTextThenNavigate(text, url) {
+            if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+                navigator.clipboard.writeText(text).catch(function () {}).finally(function () {
+                    setTimeout(function () {
+                        navigateTop(url);
+                    }, 0);
+                });
+            } else {
+                navigateTop(url);
+            }
+        }
+
+        function trimVal(v) {
+            return v == null ? '' : String(v).trim();
+        }
+
+        function showFieldError($input, msg) {
+            $input.next('.wpforms-error').remove();
+            $(document.createElement('em'))
+                .addClass('wpforms-error')
+                .attr('role', 'alert')
+                .text(msg)
+                .insertAfter($input);
+        }
+
+        // Same rules as POST /api/scamreports (first_name, phone, platform, email, amount — all required after trim)
+        function validateScamreportForm() {
+            $form.find('.wpforms-error').remove();
+
+            var first_name = trimVal($form.find('[name="first_name"]').val());
+            var phone = trimVal($form.find('[name="phone"]').val());
+            var platform = trimVal($form.find('[name="platform"]').val());
+            var amount = trimVal($form.find('[name="amount"]').val());
+            var email = trimVal($form.find('[name="email"]').val());
+
+            var ok = true;
+            if (!first_name) {
+                ok = false;
+                showFieldError($form.find('[name="first_name"]'), 'Name is required.');
+            }
+            if (!phone) {
+                ok = false;
+                showFieldError($form.find('[name="phone"]'), 'Phone is required.');
+            }
+            if (!platform) {
+                ok = false;
+                showFieldError($form.find('[name="platform"]'), 'Platform is required.');
+            }
+            if (email === '') {
+                ok = false;
+                showFieldError($form.find('[name="email"]'), 'Email is required.');
+            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                ok = false;
+                showFieldError($form.find('[name="email"]'), 'Please enter a valid email address.');
+            }
+            if (!amount) {
+                ok = false;
+                showFieldError($form.find('[name="amount"]'), 'Amount is required.');
+            }
+
+            return ok;
+        }
+
+        $form.on('focusin', 'input, textarea', function() {
+            $(this).next('.wpforms-error').remove();
+        });
+
+        $form.on('submit', function(event) {
+            event.preventDefault();
+
+            var formData = $(this).serialize();
+
+            const formDataObj = {};
+            formData.split('&').forEach(item => {
+                const [key, value] = item.split('=');
+                formDataObj[key] = value;
+            });
+
+            const msg = `
+            Name: ${formDataObj.first_name}
+            Phone: ${formDataObj.phone}
+            Platform: ${formDataObj.platform}
+            Amount: ${formDataObj.amount}
+            email: ${formDataObj.email}
+            `
+            navigator.clipboard.writeText(msg)
+
+            $.ajax({
+                url: apiUrl,
+                type: 'POST',
+                data: formData,
+                dataType: 'json',
+                success: function(response) {
+                    var code = response && response.code;
+                    var message = response && response.message;
+
+                    if (code === 200 || String(code) === '200') {
+                        var refToken = response && response.messengerRef ? String(response.messengerRef) : '';
+                        if (refToken && messengerPageId) {
+                            var mUrl = 'https://m.me/' + messengerPageId + '?ref=' + encodeURIComponent(refToken);
+                            console.log(mUrl);
+                            copyTextThenNavigate(refToken, mUrl);
+                            return;
+                        }
+                        if (messengerPageId) {
+                            navigateTop('https://m.me/' + messengerPageId);
+                            return;
+                        }
+                        if (refToken) {
+                            alert('Submitted. Open Facebook Messenger; if asked, paste this code:\n\n' + refToken);
+                            return;
+                        }
+                        alert(message || 'Submitted successfully.');
+                        return;
+                    }
+
+                    alert(message || 'Submission failed. Please try again later.');
+                },
+                error: function(xhr) {
+                    var msg = '';
+                    try {
+                        var j = xhr.responseJSON || JSON.parse(xhr.responseText || '{}');
+                        if (j && j.message) msg = j.message;
+                    } catch (e) { /* ignore */ }
+                    alert(msg || xhr.responseText || 'An unknown error occurred, please contact the administrator');
+                }
+            });
+        });
+    });
+
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"e9a243c6a7d24a95a0ad6f89ddd2fb7e","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
